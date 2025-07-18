@@ -1,0 +1,25 @@
+ansdatawarehouse:
+  outputs:
+    dev:
+      dbname: '{{ env_var(''DB_NAME_PROD'') }}'
+      host: '{{ env_var(''DB_HOST_PROD'') }}'
+      keepalives_idle: 0
+      password: '{{ env_var(''DB_PASS_PROD'') }}'
+      port: '{{ env_var(''DB_PORT_PROD'') | int }}'
+      schema: '{{ env_var(''DB_SCHEMA_PROD'') }}'
+      threads: '{{ env_var(''DB_THREADS_PROD'') | int }}'
+      type: postgres
+      user: '{{ env_var(''DB_USER_PROD'') }}'
+  target: dev
+ansdatawarehouse:
+  outputs:
+    dev:
+      dbname: dbt_database
+      host: dpg-d1slg27gi27c739ib89g-a.oregon-postgres.render.com
+      pass: NrtKkB3XIM2jDYRay3XO0wiqt1PbzNpm
+      port: 5432
+      schema: public
+      threads: 1
+      type: postgres
+      user: postgres123
+  target: dev
