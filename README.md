@@ -1,12 +1,30 @@
-### dw-aberto-dbt
+# dw-aberto-dbt
+
+Explore [https://docs.getdbt.com/docs/cloud/cloud-cli-installation](cloud-cli)
+
 
 ## setup ambiente
 
-1. - Criar ambiente virtual
+1. Criar ambiente virtual
 
+```bash
 python -m venv .venv
+```
+
+```bash
 source .venv/Scripts/activate
+```
 
-2. - install bibliotecas
+## install bibliotecas
 
-// pip install yfinance pandas sqlalchemy dotenv psycopg2-binary  //pyt
+```bash
+pip install yfinance pandas sqlalchemy dotenv psycopg2-binary
+```
+
+## IDE de banco pgadmin
+
+4. Banco Postgres, criado no render
+[www.render.com](www.render.com)
+
+
+
